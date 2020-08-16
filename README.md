@@ -8,7 +8,7 @@ run ProductoptionsApplication.java as spring boot app
 
 ### Swagger
 Once the app is up and running go to https://localhost:8090/swagger-ui.html#/Xero 
-#### for POST,PUT and DELETE use username and password as ADMIN and password
+#### for POST,PUT and DELETE use username and password as 'ADMIN' and 'password'
 ![](https://github.com/bharathkarnam/xero-refactor/blob/master/img/c3.JPG)
 
 ### to run test - unit test
