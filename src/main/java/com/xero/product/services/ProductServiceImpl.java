@@ -2,6 +2,8 @@ package com.xero.product.services;
 
 import com.xero.product.daoimpl.ProductDaoService;
 import com.xero.product.models.Product;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +16,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Autowired
     ProductDaoService productDaoService;
+    private final Logger logger = LoggerFactory.getLogger(ProductOptionsImpl.class);
 
 
 
@@ -24,6 +27,7 @@ public class ProductServiceImpl implements ProductService {
             mp.put("items", productDaoService.getAllProducts());
             return mp;
         } catch(Exception e){
+            logger.error(e.getMessage());
             throw e;
         }
     }

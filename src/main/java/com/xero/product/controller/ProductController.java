@@ -25,7 +25,6 @@ public class ProductController {
     ProductService productService;
     private final Logger logger = LoggerFactory.getLogger(ProductController.class);
 
-
     @GetMapping(Constants.PRODUCTS)
     public  ResponseEntity<Map<String, List<Product>>> getProducts() {
         try {

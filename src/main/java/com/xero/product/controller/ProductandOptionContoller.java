@@ -25,8 +25,6 @@ public class ProductandOptionContoller {
     ProductOptionsService productOptionsService;
     private final Logger logger = LoggerFactory.getLogger(ProductController.class);
 
-    Gson responseJson = new Gson();
-
     @GetMapping(Constants.OPTIONS)
     public ResponseEntity<Map<String, List<ProductOptions>>> getProductOptions(@RequestParam @NonNull String productId) {
         try {
