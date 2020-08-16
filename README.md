@@ -20,5 +20,5 @@ download jmeter from download jmeter from https://jmeter.apache.org/
 run jmeter and import Xero Product and Options.jmx file then run the testplan
 ![](https://github.com/bharathkarnam/xero-refactor/blob/master/img/c1.JPG)
 
-## Enhacements
+## Enhancements
 please refer https://github.com/bharathkarnam/xero-refactor/wiki/Enhancements 
